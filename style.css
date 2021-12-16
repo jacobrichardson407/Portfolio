@@ -1,0 +1,146 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+.container{
+    color: black;
+}
+.container #header{
+    text-align: center;
+    justify-content: center;
+    height: 40em;
+}
+.nav{
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+    width: 100%;
+}
+.row{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+.nav-link{
+    color: rgb(0, 0, 0);
+}
+.nav-link:hover{
+    color: white;
+    text-shadow: blue 0px 0px 5px;
+}
+.container-about{
+    text-align: center;
+}
+.container-about h2{
+    font-weight: bold;
+    font-size: 250%;
+    text-shadow: blue 0 0 5px;
+
+}
+#navbar{
+    justify-content: center;
+    background-color: white;
+    box-shadow: blue 0 0 15px;
+}
+#header h1{
+    font-weight: bold;
+    font-size: 10em;
+    text-align: center;
+    margin-top: 2em;
+    position: relative;
+}
+.row #contactform{
+    justify-content: center;
+    height: fit-content;
+    width: 35%;
+    margin-left: 5em;
+    position: relative;
+}
+.row #contact{
+    text-align: center;
+}
+#header{
+    padding-bottom: 15em;
+    text-align: center;
+    justify-content: center;
+}
+#header p{
+    margin-top: -2em;
+    color: blue;
+    position: relative;
+    text-align: right;
+    margin-bottom: 10em;
+    margin-right: 2em;
+}
+.projects{
+    text-align: center;
+}
+.footer{
+    background-color: white;
+    box-shadow: blue 0 0 15px;
+    width: 100%;
+    background-size: contain;
+}
+.footer p{
+    margin: 1em;
+}
+.image .jake-image{
+    height: 60%;
+    width: 60%;
+    display: inline;
+    position: relative;
+    border-radius: 200px;
+    margin-left: 25em;
+    margin-top: -25em;
+    box-shadow: blue 0 0 15px;
+}
+.image p{
+    position: relative;
+    margin-left: 39em;
+    margin-top: -15em;
+    height: 60%;
+    width: 150%;
+    font-size: larger;
+}
+.list-group{
+    display: inline-block;
+    position: relative;
+    border: darkgrey 1px solid;
+    box-shadow: blue 0 0 15px;
+}
+.skills-column{
+    margin-left: 10em;
+}
+.container-projects{
+    width: 90%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+.container-projects carousel-item img, carousel-inner img{
+    width: 10%;
+    height: 10%;
+}
+.carousel-caption{
+    color: black;
+    text-shadow: blue 0 0 10px;
+    background-color: white;
+    background-size: cover;
+}
+.carousel-caption h5{
+    font-weight: bold;
+}
+.row #portfolio h2{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin: 1em;
+}
+.carousel-control-prev{
+    width: 10%;
+}
+.carousel-control-next{
+    width: 10%;
+}
