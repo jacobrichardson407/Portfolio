@@ -48,7 +48,7 @@ body{
     font-weight: bold;
     font-size: 10em;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 1em;
     position: relative;
 }
 .row #contactform{
@@ -87,8 +87,8 @@ body{
     margin: 1em;
 }
 .image .jake-image{
-    height: 60%;
-    width: 60%;
+    height: 80%;
+    width: 80%;
     display: inline;
     position: relative;
     border-radius: 200px;
