@@ -7,12 +7,10 @@ body{
     background-size: 100vw 100%;
     color: white;
     display: block;
-    width: 100vw;
+    width: 100%;
+    margin: auto;
 }
-.container{
-    color: black;
-}
-.container #header{
+#header{
     text-align: center;
     justify-content: center;
     height: 40em;
@@ -24,16 +22,23 @@ body{
     width: 100vw;
     vertical-align: middle;
 }
+.navbar{
+    margin-top: -.55em;
+    vertical-align: middle;
+}
 .row{
     text-align: center;
     justify-content: center;
     margin-bottom: 5em;
 }
+li .nav-item{
+    margin-bottom: 1em;
+}
 .nav-link{
     color: rgb(0, 0, 0);
 }
 .textlink{
-    margin-top: .35em;
+    margin-top: .5em;
 }
 .nav-link:hover{
     text-shadow: black 0px 0px 8px;
@@ -43,27 +48,25 @@ body{
 }
 .container-about{
     text-align: center;
-    display: inline;
-    width: 50vw;
+    display: block;
+    justify-content: center;
+    width: 100vw;
+    margin: auto;
 }
-.skills-title{
-    margin-right: 29.65em;
+.container-about .skills-column{
+    margin-left: 3em;
+}
+.container-about .skills-column h4{
+    text-align: center;
+    margin: auto;
+    margin-left: 1.15em;
+    margin-bottom: .5em;
 }
 .container-about h2{
     font-weight: bold;
     font-size:7em ;
     text-shadow: lightblue 0 0 5px;
-}
-div#about .skills-column, div#badges{
-    display: inline;
     position: relative;
-}
-div.skills-column{
-    display: inline-block;
-}
-div.skills-column ul#skills-list{
-    color: black;
-    margin-right: 25em;
 }
 #navbar{
     justify-content: center;
@@ -93,6 +96,9 @@ div#email-form{
     width: auto;
     margin: auto;
 }
+input.btn{
+    text-shadow: lightblue 0 0 10px;
+}
 #header{
     padding-bottom: 15em;
     text-align: center;
@@ -104,6 +110,7 @@ div#email-form{
     text-align: right;
     color: lightblue;
     margin-right: 5em;
+    margin-top: -1rem;
 }
 div#portfolio{
     width: 100vw;
@@ -113,6 +120,7 @@ div.footer{
     box-shadow:black 0 0 20px inset;
     color: black;
     margin-bottom: -1rem;
+    width: 100vw;
 }
 div.footer p{
     height: 3em;
@@ -122,29 +130,43 @@ div.footer p{
 div#about{
     justify-content: center;
 }
+.image{
+    margin: auto;
+    display: inline-block;
+    margin-left: 47em;
+    margin-top: -50em;
+}
 .image .jake-image{
     height: 15em;
     width: 15em;
-    display: inline-block;
-    margin-left: 45em;
-    margin-top: -50em;
     position: relative;
     border-radius: 200px;
     box-shadow: lightblue 0 0 15px;
+    display: inline;
 }
 .image p{
-    position: relative;
-    margin-left: 39em;
-    margin-top: -23em;
-    height: 10em;
-    width: 20em;
+    height: 15em;
+    width: 25em;
     font-size: larger;
+    position: relative;
+    display: inline-block;
+    margin-top: -30em;
+    margin-left: -45em;
 }
 .list-group{
-    display: inline-block;
+    display: inline;
     position: relative;
-    border: darkgrey 1px solid;
     box-shadow: lightblue 0 0 15px;
+    text-align: center;
+    width: 25em;
+    color: black;
+    width: 15em;
+    margin-bottom: 15em;
+    background-color: black;
+}
+.skills-column ul.list-group{
+    box-shadow: lightblue 0 0 25px;
+    text-align: center;
 }
 .container-projects{
     width: 90vw;
@@ -190,18 +212,20 @@ div#about{
     color: black;
 }
 div#badges{
-    display: inline-block;
-    position: relative;
-    margin-left: 3.5em;
-    margin-bottom: 2em;
+    width: 20em;
+    position: fixed;
+    display: inline;
+    margin: auto;
+}
+div#badges .btn{
+    margin: auto;
 }
 div#badges img#badge{
     height: 100px;
     width: 100px;
-    display: inline-flexbox;
-    position: relative;
     filter: drop-shadow(lightblue 0 0 10px);
     margin-top: .5em;
+
 } 
 div#badges img#badge:hover{
     filter: drop-shadow(black 0 0 10px);
@@ -210,8 +234,7 @@ div#badges a#credly{
     display: block;
     color: white;
     text-decoration: none;
-    width: 10em;
-    margin-left: 4.4em;
+    width: 9em;
 }
 div#badges a#credly:hover{
     color: lightblue;
@@ -224,15 +247,17 @@ div#navbar ul li a img{
 div#navbar ul li a img:hover{
     box-shadow: black 0 0 25px;
 }
+.details{
+    margin-top: -15em;
+}
 ::-webkit-scrollbar {
     width: 1rem;
-    height: 2em;
 }
 ::-webkit-scrollbar-thumb {
-    background-image: url(assets/background.jpg);
+    background-image: url(assets/scrollbar-background.jpg);
     background-size: 100% 100%;
     border-radius: 6px;
-    -webkit-box-shadow: black 0 0 5px inset;
+    box-shadow: inset black 0 0 10px;
 }
 
 ::-webkit-scrollbar-track {

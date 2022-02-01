@@ -21,8 +21,8 @@
 <body>
   <div class="contain-body">
     <div class="container-header">
-      <div class="row fixed-top mb-5" id="navbar">
-        <ul class="nav mt-1">
+      <div class="row navbar fixed-top" id="navbar">
+        <ul class="nav navbar">
           <li class="nav-item">
             <a class="nav-link textlink" aria-current="page" href="#">Home</a>
           </li>
@@ -52,8 +52,8 @@
     </div>
     <div class="container-about" id="about">
       <h2>About Me</h2>
-      <div class="skills-column col-2 mt-3 ml-5">
-        <h4 class="skills-title">Skills</h4>
+      <div class="skills-column col-2">
+        <h4 class="header">Skills</h4>
         <ul class="list-group" id="skills-list">
           <li class="list-group-item">C#</li>
           <li class="list-group-item">CSS</li>
@@ -72,19 +72,21 @@
           <li class="list-group-item">Graphic Design</li>
         </ul>
       </div>
-      <div id="badges">
-        <a class="btn btn-dark" id="credly" href="https://www.credly.com/users/jacob-richardson.fced2182">Credly
-          Badges</a>
-        <a href="https://www.credly.com/badges/43e9f541-9be1-4c52-bd10-e3fa63a03fce"><img id="badge"
-            src="assets/Badges/MTA-Software_Development_Fundamentals-600x600.png" alt="MTA Badge"></a>
-        <a href="https://www.credly.com/badges/fbfda144-5b3e-46dc-ad47-7ce8efeb62f7"><img id="badge"
-            src="assets/Badges/SD_gold_badge.png" alt="EFA Gold Badge"></a>
-        <a href="https://www.credly.com/badges/dd1652e7-d3a1-40c5-87d8-b5040020af2c"><img id="badge"
-            src="assets/Badges/SD_Blue.png" alt="EFA Blue Badge"></a>
-      </div>
-      <div class="image">
-        <img class="jake-image" src="assets/jake-image.jpg" alt="photo-of-me">
-        <p>Hi, I'm Jacob Richardson! I have </p>
+      <div class="details">
+        <div id="badges">
+          <a class="btn btn-dark" id="credly" href="https://www.credly.com/users/jacob-richardson.fced2182">Credly
+            Badges</a>
+          <a href="https://www.credly.com/badges/43e9f541-9be1-4c52-bd10-e3fa63a03fce"><img id="badge"
+              src="assets/Badges/MTA-Software_Development_Fundamentals-600x600.png" alt="MTA Badge"></a>
+          <a href="https://www.credly.com/badges/fbfda144-5b3e-46dc-ad47-7ce8efeb62f7"><img id="badge"
+              src="assets/Badges/SD_gold_badge.png" alt="EFA Gold Badge"></a>
+          <a href="https://www.credly.com/badges/dd1652e7-d3a1-40c5-87d8-b5040020af2c"><img id="badge"
+              src="assets/Badges/SD_Blue.png" alt="EFA Blue Badge"></a>
+        </div>
+        <div class="image">
+          <img class="jake-image" src="assets/jake-image.jpg" alt="photo-of-me">
+          <p>Hi, I'm Jacob Richardson! I'm a Junior Software Developer and a self-taught Graphic Designer. I graduated from Eleven Fifty Academy's Software Development full-time course on January 28, 2022. My hobbies include graphic design, coding, gaming, and fishing during the warmer months.</p>
+        </div>
       </div>
     </div>
     <hr>
@@ -94,42 +96,81 @@
         <div id="project-box">
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="assets/FishTrackerMVC.JPG" class="d-block w-100" alt="FishTrackerMVC">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Fish Tracker MVC</h5>
-                  <p>a web MVC that allows users to track their catch data including adding new species and lures. <a class="btn btn-dark" href="fishtrackerwebmvc.azurewebsites.com">Fish Tracker</a></p>
+                  <p>A web MVC that allows users to track their catch data including adding new species and lures. <a
+                      class="btn btn-dark" href="fishtrackerwebmvc.azurewebsites.com">Fish Tracker</a></p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="assets/WikiAPIProject.JPG" class="d-block w-100" alt="WikiAPIProject">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>WikiAPI</h5>
-                  <p>an API used to store topics, contents as table of contents, and subcontents as the detailed information.</p>
+                  <p>An API used to store topics, contents as table of contents, and subcontents as the detailed
+                    information.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="assets/CSSCreatureProject.JPG" class="d-block w-100" alt="CSSCreatureProject">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>CSS Creature</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <p>A tortoise I made using only HTML and CSS.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/GoalCounterProject.JPG" class="d-block w-100" alt="GoalCounterProject">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Goal Counter</h5>
+                  <p>A goal counter website that counts the clients score, then gives total score as a percentage.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/StoreFrontProject.JPG" class="d-block w-100" alt="StoreFrontProject">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Static Store Front</h5>
+                  <p>A static store front for a pizza restaurant.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/TicTacToeProject.JPG" class="d-block w-100" alt="TicTacToeProject">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Tic Tac Toe</h5>
+                  <p>A Tic Tac Toe C# console app</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/GoldBadgeConsoleApps.JPG" class="d-block w-100" alt="GoldBadgeConsoleApps">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>EFA Gold Badge Console Apps</h5>
+                  <p>A set of C# console applications for an imaginary insurance company.</p>
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
