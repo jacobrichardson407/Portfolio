@@ -3,8 +3,11 @@ body{
     text-align: center;
     justify-content: center;
     position: relative;
-    background-image: linear-gradient(rgb(14, 0, 70),rgba(0, 0, 0));
+    background-image: url(assets/background.jpg);
+    background-size: 100vw 100%;
     color: white;
+    display: block;
+    width: 100vw;
 }
 .container{
     color: black;
@@ -18,7 +21,7 @@ body{
     justify-content: center;
     font-size: larger;
     font-weight: bold;
-    width: 100%;
+    width: 100vw;
     vertical-align: middle;
 }
 .row{
@@ -28,7 +31,9 @@ body{
 }
 .nav-link{
     color: rgb(0, 0, 0);
-    vertical-align: middle;
+}
+.textlink{
+    margin-top: .35em;
 }
 .nav-link:hover{
     text-shadow: black 0px 0px 8px;
@@ -39,6 +44,10 @@ body{
 .container-about{
     text-align: center;
     display: inline;
+    width: 50vw;
+}
+.skills-title{
+    margin-right: 29.65em;
 }
 .container-about h2{
     font-weight: bold;
@@ -54,34 +63,32 @@ div.skills-column{
 }
 div.skills-column ul#skills-list{
     color: black;
-    margin-right: 10em;
+    margin-right: 25em;
 }
 #navbar{
     justify-content: center;
     background-color: white;
     box-shadow: black 0 0 15px inset;
     height: 4em;
+    width: 100vw;
 }
 #header h1{
     font-weight: bold;
-    font-size: 10em;
+    font-size: 1000%;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 2.5em;
 }
 div#contactform{
     width: auto;
     margin: auto;
     justify-content: center;
-    display: flexbox;
-    position: relative;
 }
 div#email-form{
     justify-content: center;
     height: 20em;
-    width: auto;
     margin: auto;
 }
-div#contact{
+#contact{
     text-align: center;
     width: auto;
     margin: auto;
@@ -90,28 +97,26 @@ div#contact{
     padding-bottom: 15em;
     text-align: center;
     justify-content: center;
+    width: 100vw;
 }
 #header p{
-    margin-top: -2em;
-    color: lightblue;
-    position: relative;
+    font-weight: bold;
     text-align: right;
-    margin-bottom: 10em;
-    margin-right: 2em;
+    color: lightblue;
+    margin-right: 5em;
 }
-.projects{
-    text-align: center;
+div#portfolio{
+    width: 100vw;
 }
 div.footer{
-    background-color: rgb(0, 1, 80);
+    background-color: white;
     box-shadow:black 0 0 20px inset;
-    color: white;
+    color: black;
+    margin-bottom: -1rem;
 }
 div.footer p{
     height: 3em;
     padding-top: .8em;
-}
-.footer p{
     margin: 1em;
 }
 div#about{
@@ -122,7 +127,7 @@ div#about{
     width: 15em;
     display: inline-block;
     margin-left: 45em;
-    margin-top: -40em;
+    margin-top: -50em;
     position: relative;
     border-radius: 200px;
     box-shadow: lightblue 0 0 15px;
@@ -130,7 +135,7 @@ div#about{
 .image p{
     position: relative;
     margin-left: 39em;
-    margin-top: -19em;
+    margin-top: -23em;
     height: 10em;
     width: 20em;
     font-size: larger;
@@ -142,64 +147,94 @@ div#about{
     box-shadow: lightblue 0 0 15px;
 }
 .container-projects{
-    width: 90%;
+    width: 90vw;
     position: relative;
     justify-content: center;
     text-align: center;
+    margin-bottom: -3em;
+    padding: -1em;
 }
 .container-projects carousel-item img, carousel-inner img{
-    width: 100vw;
-    height: 100vh;
+    width: 80vw;
+    box-shadow: black 0 0 20px;
 }
 .carousel-caption{
     color: black;
     text-shadow: lightblue 0 0 10px;
-    background-color: white;
+    background-image: url(assets/background.jpg);
     background-size: cover;
 }
 .carousel-caption h5{
     font-weight: bold;
 }
+#project-box{
+    box-shadow: lightblue 0 0 25px;
+    margin-top: 1em;
+}
 .row #portfolio h2{
     text-align: center;
-    width: 100%;
+    width: 100vw;
     position: relative;
-    margin: 1em;
+}
+#email{
+    width: 100vw;
 }
 .carousel-control-prev{
     width: 6em;
-    background-color: rgba(173, 216, 230, 0.726);
+    background-color: rgba(126, 126, 126, 0.726);
     color: black;
 }
 .carousel-control-next{
     width: 6em;
-    background-color: rgba(173, 216, 230, 0.726);
+    background-color: rgba(126, 126, 126, 0.726);
     color: black;
 }
 div#badges{
     display: inline-block;
-    margin-left: 18.7em;
     position: relative;
+    margin-left: 3.5em;
+    margin-bottom: 2em;
 }
 div#badges img#badge{
     height: 100px;
     width: 100px;
     display: inline-flexbox;
     position: relative;
+    filter: drop-shadow(lightblue 0 0 10px);
+    margin-top: .5em;
 } 
+div#badges img#badge:hover{
+    filter: drop-shadow(black 0 0 10px);
+}
 div#badges a#credly{
     display: block;
     color: white;
+    text-decoration: none;
+    width: 10em;
+    margin-left: 4.4em;
 }
 div#badges a#credly:hover{
     color: lightblue;
     text-decoration: none;
 }
 div#navbar ul li a img{
-    height: 100%;
     width: 2em;
     border-radius: 1em;
 }
 div#navbar ul li a img:hover{
     box-shadow: black 0 0 25px;
+}
+::-webkit-scrollbar {
+    width: 1rem;
+    height: 2em;
+}
+::-webkit-scrollbar-thumb {
+    background-image: url(assets/background.jpg);
+    background-size: 100% 100%;
+    border-radius: 6px;
+    -webkit-box-shadow: black 0 0 5px inset;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0.8);
 }
