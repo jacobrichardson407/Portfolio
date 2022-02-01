@@ -17,21 +17,16 @@
 </head>
 
 <body>
-    <div class="container-header" id="home">
+    <div class="container-header">
         <div class="fixed-top">
             <nav class="navbar bg-light" id="navbar">
                 <form class="container-fluid d-block" id="navbar">
-                    <button class="btn btn-outline-dark" type="button" id="navbutton"><a href="#home">Home</a></button>
-                    <button class="btn btn-outline-dark" type="button" id="navbutton"><a href="#container-about">About
-                            Me</a></button>
-                    <button class="btn btn-outline-dark" type="button" id="navbutton"><a
-                            href="#container-projects">Projects</a></button>
-                    <button class="btn btn-outline-dark" type="button" id="navbutton"><a
-                            href="#container-contact">Contact Me</a></button>
-                    <button class="btn btn-outline-dark" type="button" id="navbutton"><a
-                            href="https://github.com/jacobrichardson407">GitHub</a></button>
-                    <button class="btn btn-outline-dark" type="button" id="navbutton"><a
-                            href="https://www.linkedin.com/in/jacob-richardson-198aa0228/">Linkedin</a></button>
+                    <a class="btn btn-outline-dark" href="#top">Home</a>
+                    <a class="btn btn-outline-dark" href="#container-about">About Me</a>
+                    <a class="btn btn-outline-dark" href="#container-projects">Projects</a>
+                    <a class="btn btn-outline-dark" href="#container-contact">Contact Me</a>
+                    <a class="btn btn-outline-dark" href="https://github.com/jacobrichardson407" target="_blank">GitHub</a>
+                    <a class="btn btn-outline-dark" href="https://www.linkedin.com/in/jacob-richardson-198aa0228/" target="_blank">Linkedin</a>
                 </form>
             </nav>
         </div>
@@ -63,22 +58,26 @@
                 <li class="list-group-item">Graphic Design</li>
             </ul>
         </div>
-        <div class="my-image">
-            <img class="jake-image" src="assets/jake-image.jpg" alt="photo-of-me">
-            <p>Hi, I'm Jacob Richardson! I'm a Junior Software Developer and a self-taught Graphic Designer. I graduated
-                from Eleven Fifty Academy's Software Development full-time course on January 28, 2022. My hobbies
-                include graphic design, coding, gaming, and fishing during the warmer months.</p>
-        </div>
-        <div id="badges">
-            <a class="btn btn-dark" id="credly" href="https://www.credly.com/users/jacob-richardson.fced2182">Credly
-                Badges</a>
-            <div class="badge-images">
-                <a href="https://www.credly.com/badges/43e9f541-9be1-4c52-bd10-e3fa63a03fce"><img id="badge"
-                        src="assets/Badges/MTA-Software_Development_Fundamentals-600x600.png" alt="MTA Badge"></a>
-                <a href="https://www.credly.com/badges/fbfda144-5b3e-46dc-ad47-7ce8efeb62f7"><img id="badge"
-                        src="assets/Badges/SD_gold_badge.png" alt="EFA Gold Badge"></a>
-                <a href="https://www.credly.com/badges/dd1652e7-d3a1-40c5-87d8-b5040020af2c"><img id="badge"
-                        src="assets/Badges/SD_Blue.png" alt="EFA Blue Badge"></a>
+        <div class="about-me">
+            <div class="my-image">
+                <img class="jake-image" src="assets/jake-image.jpg" alt="photo-of-me">
+                <p>Hi, I'm Jacob Richardson! I'm a Junior Software Developer and a self-taught Graphic Designer. I graduated
+                    from Eleven Fifty Academy's Software Development full-time course on January 28, 2022. My hobbies
+                    include graphic design, coding, gaming, and fishing during the warmer months.</p>
+            </div>
+            <div class="badges">
+                <div id="badges">
+                    <a class="btn btn-dark" id="credly" target="_blank" href="https://www.credly.com/users/jacob-richardson.fced2182">Credly
+                        Badges</a>
+                    <div class="badge-images">
+                        <a href="https://www.credly.com/badges/43e9f541-9be1-4c52-bd10-e3fa63a03fce"><img id="badge"
+                                src="assets/Badges/MTA-Software_Development_Fundamentals-600x600.png" alt="MTA Badge"></a>
+                        <a href="https://www.credly.com/badges/fbfda144-5b3e-46dc-ad47-7ce8efeb62f7"><img id="badge"
+                                src="assets/Badges/SD_gold_badge.png" alt="EFA Gold Badge"></a>
+                        <a href="https://www.credly.com/badges/dd1652e7-d3a1-40c5-87d8-b5040020af2c"><img id="badge"
+                                src="assets/Badges/SD_Blue.png" alt="EFA Blue Badge"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -164,19 +163,19 @@
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                        <span>Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
                         data-bs-slide="next">
+                        <span>Next</span>
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
                     </button>
                 </div>
             </div>
         </div>
     </div>
     <hr>
-    <div class="container-contact">
+    <div class="container-contact" id="container-contact">
         <div class="email col-2 position-relative display-inline">
             <h2 id="contact">Contact</h2>
             <form action="https://formspree.io/f/mzbobybk" method="POST">
