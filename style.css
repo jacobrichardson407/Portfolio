@@ -1,0 +1,249 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(assets/background.jpg);
+    background-size: 100vw 100%;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    display: block;
+}
+textarea, input{
+    background-image: url(assets/navbarbackground.jpg);
+    background-size: cover;
+}
+hr{
+    background-image: url(assets/hrBackground.jpg);
+    width: 75vw;
+    margin: auto;
+    padding-top: 5px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 3px;
+    box-shadow: lightblue 0 0 5px;
+    background-size: cover;
+}
+
+/* ============================================================================================== */
+/* Navbar */
+/* ============================================================================================== */
+.container-header .navbar {
+    margin: auto;
+    background-image: url(assets/navbarbackground.jpg);
+    position: relative;
+    width: 75vw;
+    padding-left: -5em;
+    box-shadow: black 0 0 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.container-header nav.navbar form#navbar {
+    margin: auto;
+    width: 100vw;
+}
+
+.container-fluid {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+button#navbutton {
+    margin-left: 5em;
+    width: 8rem;
+    margin: auto;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+button#navbutton a {
+    text-decoration: none;
+    color: black;
+}
+
+button#navbutton:hover a {
+    color: white;
+    text-shadow: lightblue 0 0 9px;
+}
+
+button#navbutton:hover {
+    box-shadow: lightblue 0 0 15px;
+}
+
+/* ============================================================================================== */
+
+/* Header/Title */
+/* ============================================================================================== */
+.title{
+    position: relative;
+    display: block;
+    margin-bottom: 25em;
+}
+h1{
+    font-size: 10em;
+    margin-top: 2.4em;
+}
+
+.title p{
+    background: -webkit-linear-gradient(lightblue, rgb(125, 177, 194));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 65em;
+    margin-top: -2em;
+    width: 15em;
+}
+/* ============================================================================================== */
+
+/*  About Me */
+/* ============================================================================================== */
+.container-about{
+    margin: auto;
+    width: 90vw;
+    justify-content: center;
+    height: 100em;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+}
+
+
+#badges img{
+    width: 100px;
+    filter: drop-shadow(lightblue 0 0 10px);
+    margin: 1em;
+}
+#badges img:hover{
+    filter: drop-shadow(black 0 0 10px);
+}
+#badges{
+    width: 25em;
+    margin: auto;
+    display: inline;
+}
+
+.container-about .list{
+    width: 16em;
+    display: inline-block;
+    margin-left: 0;
+}
+.list h4{
+    text-align: left;
+    margin-left: 3.8em;
+}
+
+.list-group{
+    width: 15em;
+    box-shadow: lightblue 0 0 15px;
+}
+.my-image{
+    width: 25vw;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+.my-image .jake-image{
+    width: 15vw;
+    border-radius: 250px;
+    margin: auto;
+}
+.my-image p{
+    margin: auto;
+    width: 25em;
+}
+/* ============================================================================================== */
+
+/* Projects */
+/* ============================================================================================== */
+.container-projects {
+    width: 50vw;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+}
+
+.container-projects carousel-item img, carousel-inner img {
+    width: 50%;
+}
+
+.carousel-caption {
+    color: black;
+    text-shadow: lightblue 0 0 10px;
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+}
+
+.carousel-caption h5 {
+    font-weight: bold;
+}
+.carousel-caption p {
+    color: white;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-shadow: black 0 0 9px;
+}
+
+/* ============================================================================================== */
+
+/* Contact Form */
+/* ============================================================================================== */
+.email{
+    margin: auto;
+}
+div#email-form{
+    justify-content: center;
+    height: 20em;
+    margin: auto;
+}
+#contact{
+    text-align: center;
+    width: auto;
+    margin: auto;
+}
+.email form button{
+    margin-top: 1em;
+}
+.email form button:hover{
+    box-shadow: lightblue 0 0 15px;
+    text-shadow: lightblue 0 0 9px;
+}
+
+/* ============================================================================================== */
+
+/* Footer */
+/* ============================================================================================== */
+.footer {
+    color: black;
+    background-image: url(assets/navbarbackground.jpg);
+    margin-bottom: -1em;
+    height: 3em;
+}
+
+div.footer p {
+    height: 3em;
+    padding-top: .8em;
+    margin: 1em;
+}
+
+/* ============================================================================================== */
+
+/* Scrollbar properties */
+/* ============================================================================================== */
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: url(assets/scrollbar-background.jpg);
+    background-size: 100% 100%;
+    border-radius: 6px;
+    box-shadow: inset black 0 0 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* ============================================================================================== */
