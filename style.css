@@ -106,7 +106,8 @@ input.btn{
     width: 100vw;
 }
 #header p{
-    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
     text-align: right;
     color: lightblue;
     margin-right: 5em;
@@ -133,8 +134,7 @@ div#about{
 .image{
     margin: auto;
     display: inline-block;
-    margin-left: 47em;
-    margin-top: -50em;
+    margin-left: 1em;
 }
 .image .jake-image{
     height: 15em;
@@ -143,22 +143,23 @@ div#about{
     border-radius: 200px;
     box-shadow: lightblue 0 0 15px;
     display: inline;
+    margin-top: -15em;
 }
 .image p{
+    font-family: Arial, Helvetica, sans-serif;
     height: 15em;
     width: 25em;
     font-size: larger;
     position: relative;
     display: inline-block;
-    margin-top: -30em;
-    margin-left: -45em;
+    margin-top: -35em;
+    margin-left: -40em;
 }
 .list-group{
     display: inline;
     position: relative;
     box-shadow: lightblue 0 0 15px;
     text-align: center;
-    width: 25em;
     color: black;
     width: 15em;
     margin-bottom: 15em;
@@ -213,9 +214,9 @@ div#about{
 }
 div#badges{
     width: 20em;
-    position: fixed;
-    display: inline;
-    margin: auto;
+    display: inline-block;
+    margin-left: -20em;
+    margin-top: -50em;
 }
 div#badges .btn{
     margin: auto;
@@ -224,8 +225,7 @@ div#badges img#badge{
     height: 100px;
     width: 100px;
     filter: drop-shadow(lightblue 0 0 10px);
-    margin-top: .5em;
-
+    margin: auto;
 } 
 div#badges img#badge:hover{
     filter: drop-shadow(black 0 0 10px);
@@ -247,9 +247,7 @@ div#navbar ul li a img{
 div#navbar ul li a img:hover{
     box-shadow: black 0 0 25px;
 }
-.details{
-    margin-top: -15em;
-}
+
 ::-webkit-scrollbar {
     width: 1rem;
 }
@@ -259,7 +257,6 @@ div#navbar ul li a img:hover{
     border-radius: 6px;
     box-shadow: inset black 0 0 10px;
 }
-
 ::-webkit-scrollbar-track {
     background-color: rgba(0,0,0,0.8);
 }
