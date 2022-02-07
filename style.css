@@ -52,12 +52,14 @@ hr{
 
 a.btn{
     margin-left: 5em;
-    width: 8rem;
+    width: 6.5rem;
     margin: auto;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: .5em;
+    margin-right: .5em;
     text-decoration: none;
     color: black;
+    font-size: 75%;
+    
 }
 
 a.btn:hover {
@@ -73,23 +75,24 @@ a.btn:hover {
 .title{
     position: relative;
     display: block;
-    margin-bottom: 25em;
 }
 h1{
     font-size: 10vw;
     margin-top: 2.4em;
+    text-shadow: black 0 0 15px;
 }
 
 .title p{
     background: -webkit-linear-gradient(lightblue, rgb(125, 177, 194));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: 15em;
+    width: 13em;
     position: relative;
     display: block;
     margin: auto;
-    margin-left: 78%;
+    margin-left: 60%;
     margin-top: -1em;
+    font-size: 75%;
 }
 /* ============================================================================================== */
 
@@ -97,9 +100,10 @@ h1{
 /* ============================================================================================== */
 .container-about{
     margin: auto;
+    margin-top: 25em;
     width: 80vw;
     justify-content: center;
-    height: fit-content;
+    height: 75vw;
     vertical-align: middle;
     display: inline-block;
     position: relative;
@@ -120,7 +124,7 @@ h1{
     height: 15em;
 }
 #badges img{
-    width: 100px;
+    width: 70px;
     filter: drop-shadow(lightblue 0 0 10px);
     margin: 1em;
     position: relative;
@@ -132,6 +136,7 @@ div#badges{
     margin: auto;
     display: inline;
     position: relative;
+    margin-left: 3.7em;
 }
 #badges #credly{
     color: white;
@@ -139,62 +144,76 @@ div#badges{
 }
 
 .container-about .list{
-    width: 16em;
+    width: 10em;
     display: inline-block;
     position: relative;
-    margin-right: 30%;
+    margin-left: -30em;
 }
 .list h4{
     text-align: left;
-    margin-left: 3.8em;
+    margin-left: 3.2em;
 }
 
 .list-group{
     width: 15em;
     box-shadow: lightblue 0 0 15px;
+    font-size: small;
+}
+.list-group-item{
+    font-size: 85%;
 }
 .my-image{
     width: 25vw;
-    justify-content: center;
     text-align: center;
     position: relative;
     margin: auto;
-    margin-top: -39em;
+    margin-top: -30em;
 }
 .my-image .jake-image{
-    width: 15vw;
-    border-radius: 250px;
+    width: 20vw;
     margin: auto;
     position: relative;
-    box-shadow: lightblue 0 0 15px;
+    box-shadow: black 0 0 15px;
+    margin-left: 3.5em;
+    border-radius: 50%;
+    border: lightblue solid 7px;
+    border-style: outset;
 }
 .my-image p{
     margin: auto;
     width: 25em;
-    position: relative;
     margin-bottom: 3em;
     margin-top: 2em;
     display: inline-block;
+    margin-left: -2.5em;
+}
+.about-me{
+    justify-content: center;
+    text-align: center;
 }
 /* ============================================================================================== */
 
 /* Projects */
 /* ============================================================================================== */
 .container-projects {
-    width: 50vw;
+    width: 68vw;
     position: relative;
     justify-content: center;
     text-align: center;
     margin: auto;
     display: inline-block;
 }
-
+#project-box{
+    box-shadow: lightblue 0 0 15px;
+    width: fit-content;
+}
 .container-projects h2{
     font-size: 400%;
 }
 
 .container-projects carousel-item img, carousel-inner img {
     width: 50%;
+    box-shadow: lightblue 0 0 15px;
 }
 
 .carousel-caption {
@@ -212,9 +231,11 @@ div#badges{
     margin-left: 1em;
     margin-right: 1em;
     text-shadow: black 0 0 9px;
+    font-size: 75%;
 }
 .carousel-caption p a{
     color: white;
+    font-size: 75%;
 }
 button.carousel-control-next{
     background-image: url(assets/navbarbackground.jpg);
@@ -245,6 +266,10 @@ span.carousel-control-prev-icon{
 
 /* Contact Form */
 /* ============================================================================================== */
+.container-contact{
+    justify-content: center;
+    text-align: center;
+}
 .email{
     margin: auto;
 }
