@@ -42,6 +42,7 @@ img {
     box-shadow: black 0 0 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    margin-bottom: 5em;
 }
 
 .container-header nav.navbar form#navbar {
@@ -84,13 +85,14 @@ a.btn:hover {
 }
 h1{
     font-size: 10vw;
-    margin-top: 2.4em;
+    margin-top: 20%;
     text-shadow: black 0 0 15px;
 }
 
 .title p{
     background: -webkit-linear-gradient(lightblue, rgb(125, 177, 194));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 13em;
     position: relative;
@@ -210,6 +212,9 @@ div#badges{
     margin: auto;
     display: inline-block;
 }
+.container-projects h2{
+    margin-bottom: 1em;
+}
 #project-box{
     box-shadow: lightblue 0 0 15px;
     width: fit-content;
@@ -238,11 +243,13 @@ div#badges{
     margin-left: 1em;
     margin-right: 1em;
     text-shadow: black 0 0 9px;
-    font-size: 75%;
+    font-size: 85%;
 }
 .carousel-caption p a{
     color: white;
-    font-size: 75%;
+    margin-top: 1em;
+    font-size: 85%;
+    margin-bottom: -1em;
 }
 button.carousel-control-next{
     background-image: url(assets/navbarbackground.jpg);
